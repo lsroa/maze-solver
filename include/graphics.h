@@ -45,9 +45,8 @@ class Cell {
       : width(w), height(h), padding(padding), origin(origin) {
     center = Point(origin.x + (w / 2), origin.y + (h / 2));
   }
-  bool visited;
-  friend std::ostream& operator<<(std::ostream& out, const Cell& cell) {
   bool visited = false;
+  friend std::ostream& operator<<(std::ostream& out, const Cell& cell) {
     out << "Cell {\n";
     out << "  center: ";
     out << cell.center << std::endl;
