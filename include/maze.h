@@ -2,6 +2,8 @@
 
 #include "graphics.h"
 #include "vector"
+#include <bitset>
+#include <memory>
 
 const Point DIRS[4] = {Point(0, -1), Point(1, 0), Point(0, 1), Point(-1, 0)};
 

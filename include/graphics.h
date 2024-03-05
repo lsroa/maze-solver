@@ -47,6 +47,7 @@ class Cell {
   }
   bool visited;
   friend std::ostream& operator<<(std::ostream& out, const Cell& cell) {
+  bool visited = false;
     out << "Cell {\n";
     out << "  center: ";
     out << cell.center << std::endl;
